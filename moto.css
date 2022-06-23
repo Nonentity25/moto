@@ -113,10 +113,10 @@
 }
 
 .easy .container .col:hover {
-    -ms-transform: scale(0.98);
-    -webkit-transform: scale(0.98);
-    transform: scale(0.98);
-    box-shadow: 5px 10px 18px #999999;
+    /* -ms-transform: scale(3);
+    -webkit-transform: scale(3); */
+    transform: scale(0.96);
+    box-shadow: 1px 1px 3px 3px #999999;
     background-color: #FAF9FF;
 }
 
@@ -253,6 +253,17 @@
 
 .best .container .row .col :hover {
     background-color: #ff5f6d;
+}
+
+.best .container .row .col :hover i {
+    color: #FAF9FF;
+}
+
+.best .container .row .col :hover p {
+    color: #FAF9FF;
+}
+
+.best .container .row .col :hover h3 {
     color: #FAF9FF;
 }
 
@@ -282,8 +293,6 @@
     box-shadow: 2px 2px 2px 2px #999999;
     padding: 10px 0;
 }
-
-#row2 {}
 
 #row2 a {
     text-decoration: none;
@@ -324,7 +333,183 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-#idcol-12-2 {
+.app {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#row4 {
+    padding: 130px 0;
+}
+
+#con3 {
     width: 60%;
-    height: 20%;
+}
+
+#col-12-1 {
+    margin: 0 auto;
+    width: 48%;
+}
+
+#col-12-1 h2 {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+}
+
+#col-12-1 p {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #999999;
+}
+
+#col-12-2 {
+    width: 100%;
+}
+
+.download {
+    text-align: center;
+    background-image: url(https://template.hasthemes.com/moto/moto/img/bg/3.webp);
+}
+
+#row5 {
+    padding: 130px 0;
+}
+
+#col-12-4 {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#col-12-4 a {
+    text-decoration: none;
+}
+
+#col-12-4 a i {
+    color: #ff5f6d;
+}
+
+#col-12-4 .col-3 {
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s background-color;
+}
+
+#col-12-4 .col-3:hover {
+    background-color: #ff5f6d;
+}
+
+#col-12-4 .col-3:hover i {
+    color: white;
+}
+
+#col-12-4 .col-3:hover a {
+    color: white;
+}
+
+#col-12-4 .col-3 a {
+    color: #3e3e3e;
+}
+
+#col-12-4 .col-4 {
+    background-color: #ff5f6d;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-weight: 500;
+    margin: 0 40px;
+}
+
+#col-12-4 .col-4 a {
+    color: white;
+}
+
+#col-12-4 .col-4 i {
+    color: white;
+}
+
+#col-12-3 {
+    margin: 0 auto;
+    width: 48%;
+    padding-bottom: 45px;
+}
+
+#col-12-3 h2 {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#col-12-3 p {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.pricing {
+    text-align: center;
+}
+
+#con4 {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#row6 {
+    padding: 130px 0;
+}
+
+#col-12-5 {
+    width: 48%;
+    margin: 0 auto;
+    padding-bottom: 55PX;
+}
+
+#col-12-5 h2 {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+#col-12-5 p {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.col-sm {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #999999;
+    padding-top: 65px;
+}
+
+.col-sm li {
+    list-style: none;
+}
+
+.col-sm a {
+    text-decoration: none;
+    border-radius: 10px;
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 24px 45px;
+    transition: all 0.4s ease 0s;
 }
