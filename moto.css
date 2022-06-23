@@ -45,6 +45,10 @@
     background: url(https://template.hasthemes.com/moto/moto/img/slider/9.webp);
 }
 
+.anh img {
+    height: 100%;
+}
+
 .moto-all {
     margin: 0 auto;
     width: 60%;
@@ -110,14 +114,17 @@
 .easy .container .col {
     float: left;
     padding: 110px 25px 105px;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
 }
 
 .easy .container .col:hover {
-    /* -ms-transform: scale(3);
-    -webkit-transform: scale(3); */
-    transform: scale(0.96);
-    box-shadow: 1px 1px 3px 3px #999999;
+    box-shadow: 1px 1px 3px 3px #dee2e6;
     background-color: #FAF9FF;
+    transform: translateY(-8px);
 }
 
 .easy .container .col img {
@@ -164,10 +171,19 @@
     line-height: 25px;
 }
 
-.about .container .row .col a {
-    background: #ff5f6d;
-    border-radius: 4px;
-    box-shadow: 0 0 20px 0 rgb(255 95 109 / 40%);
+.about .btn {
+    background-color: #ff5f6d;
+    padding: 10px 40px;
+    border: #ff5f6d;
+    color: #fff;
+    transition: 0.3s color;
+}
+
+.about.btn:hover {
+    color: #fff;
+}
+
+#a {
     color: #fff;
     display: inline-block;
     font-size: 16px;
@@ -175,6 +191,13 @@
     padding: 15px 40px;
     text-decoration: none;
     margin-top: 25px;
+    transition: 0.1s background-color;
+    border-radius: 4px;
+}
+
+#a :hover {
+    background: #ff5f6d;
+    box-shadow: 0 0 20px 0 rgb(255 95 109 / 40%);
 }
 
 .best {
@@ -290,7 +313,7 @@
 
 #con2 {
     margin-top: 55px;
-    box-shadow: 2px 2px 2px 2px #999999;
+    box-shadow: 2px 2px 2px 2px #dee2e6;
     padding: 10px 0;
 }
 
@@ -490,10 +513,72 @@
     margin-bottom: 10px;
 }
 
-.col-sm {
+.col-sm {}
+
+.col-sm .basic {
+    box-shadow: 2px 2px 2px 2px #dee2e6;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px #999999;
     padding-top: 65px;
+}
+
+.basic p {
+    color: #3e3e3e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.basic span {
+    color: #3e3e3e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.basic div {
+    color: #999999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    line-height: 38px;
+}
+
+#basic1 {
+    background-color: #ff5f6d;
+}
+
+.basic {
+    transition: 0.3s background-color;
+}
+
+.basic:hover {
+    background-color: #ff5f6d;
+}
+
+.basic:hover p {
+    color: #fff;
+}
+
+.basic:hover span {
+    color: #fff;
+}
+
+.basic:hover div {
+    color: #fff;
+}
+
+#basic1 a {
+    color: #fff;
+}
+
+.basic:hover a {
+    width: 100%;
+    background-color: #ff5f6d;
+    color: #ced4da;
 }
 
 .col-sm li {
@@ -502,14 +587,99 @@
 
 .col-sm a {
     text-decoration: none;
-    border-radius: 10px;
     background: #fff none repeat scroll 0 0;
     box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
-    -webkit-box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
-    -moz-box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.1);
-    display: inline-block;
     font-size: 15px;
+    display: inline-block;
     font-weight: 600;
-    padding: 24px 45px;
+    padding: 20px 40px;
     transition: all 0.4s ease 0s;
+    color: #3e3e3e;
+}
+
+.col-sm #a1 {
+    width: 100%;
+    background-color: #ff5f6d;
+}
+
+.submit {
+    background-color: #FAF9FF;
+}
+
+.submit #con5 {
+    padding-top: 130px;
+    width: 60%;
+}
+
+.col-7 {
+    box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    text-align: center;
+}
+
+#mb-3 {
+    padding: 100px 50px;
+}
+
+.col-7 button {
+    background-color: #ff5f6d;
+    padding: 8px 46px;
+    border: 1px #ff5f6d;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.end {
+    background: url(https://template.hasthemes.com/moto/moto/img/bg/5.webp);
+}
+
+#con6 {
+    padding: 80px 0;
+    width: 60%;
+}
+
+.end .col-4 {
+    padding-bottom: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.end .col-4 i {
+    font-size: 30px;
+}
+
+#col-12-1 p {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.icon {
+    padding: 70px 0 35px 0;
+    text-align: center;
+}
+
+.icon i {
+    background-color: #fff;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    transition: 0.3s background-color boder-color;
+    margin: 0 10px;
+}
+
+.icon i:hover {
+    background-color: #ff5f6d;
+    color: #fff;
 }
