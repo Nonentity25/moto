@@ -11,6 +11,9 @@
 }
 
 .navbar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ff5f6d 0%, #ffb270 100%) repeat scroll 0 0;
 }
 
@@ -61,6 +64,9 @@
     display: flex;
     justify-content: end;
     background: url(https://template.hasthemes.com/moto/moto/img/slider/9.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .anh img {
@@ -174,14 +180,14 @@ height: 100%;
     width: 60%;
 }
 
-.about .container .row .col h2 {
+.about .container .row .col-6 h2 {
     font-size: 40px;
     font-weight: 500;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 35px;
 }
 
-.about .container .row .col p {
+.about .container .row .col-6 p {
     color: #999999;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -189,7 +195,7 @@ height: 100%;
     line-height: 25px;
 }
 
-.about .container .row .col img {
+.about .container .row .col-6 img {
     width: 100%;
     height: 100%;
 }
@@ -203,7 +209,6 @@ height: 100%;
 
 #a {
     color: #fff;
-    display: inline-block;
     font-size: 16px;
     font-weight: 700;
     padding: 15px 40px;
@@ -256,7 +261,6 @@ height: 100%;
     height: 58px;
     width: 58px;
     line-height: 54px;
-    display: inline-block;
     align-items: center;
     justify-content: center;
     color: black;
@@ -279,7 +283,6 @@ height: 100%;
     font-size: 14px;
     font-weight: 400;
     line-height: 25px;
-    padding: 0 50px;
 }
 
 .best .container .row .col-4 a {
@@ -310,6 +313,9 @@ height: 100%;
 
 .how {
     background: url(https://template.hasthemes.com/moto/moto/img/bg/1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     max-height: 100%;
 }
@@ -362,6 +368,9 @@ height: 100%;
 
 .parameter {
     background: url(https://template.hasthemes.com/moto/moto/img/bg/2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     width: 100%;
     padding: 110px 0;
     text-align: center;
@@ -422,6 +431,9 @@ height: 100%;
 .download {
     text-align: center;
     background-image: url(https://template.hasthemes.com/moto/moto/img/bg/3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #row5 {
@@ -431,7 +443,6 @@ height: 100%;
 #col-12-4 {
     margin: 0 auto;
     width: 60%;
-    margin-right: 200px;
 }
 
 #col-12-4 a {
@@ -442,18 +453,16 @@ height: 100%;
     color: #ff5f6d;
 }
 
-#col-12-4 .col-3 {}
-
-#col-12-4 .col-3 a:hover {
+#col-12-4 .col a:hover {
     background-color: #ff5f6d;
     color: white;
 }
 
-#col-12-4 .col-3 a:hover i {
+#col-12-4 .col a:hover i {
     color: white;
 }
 
-#col-12-4 .col-3 a {
+#col-12-4 .col a {
     color: #3e3e3e;
     background-color: white;
     border-radius: 10px;
@@ -462,7 +471,7 @@ height: 100%;
     padding: 15px 35px;
 }
 
-#col-12-4 .col-4 a {
+#col-12-4 .col-5 a {
     color: white;
     background-color: #ff5f6d;
     border-radius: 10px;
@@ -470,7 +479,7 @@ height: 100%;
     padding: 15px 50px;
 }
 
-#col-12-4 .col-4 i {
+#col-12-4 .col-5 i {
     color: white;
 }
 
@@ -533,9 +542,7 @@ height: 100%;
     margin-bottom: 10px;
 }
 
-.col-sm {}
-
-.col-sm .basic {
+#col-sm .basic {
     box-shadow: 2px 2px 2px 2px #dee2e6;
     border-radius: 10px;
     padding-top: 65px;
@@ -595,17 +602,21 @@ height: 100%;
     color: #fff;
 }
 
-.basic:hover a {
+.basic:hover #a2 {
     width: 100%;
     background-color: #ff5f6d;
     color: #ced4da;
 }
 
-.col-sm li {
+.basic:hover #a1 {
+    color: #ced4da;
+}
+
+#col-sm li {
     list-style: none;
 }
 
-.col-sm a {
+#col-sm a {
     text-decoration: none;
     background: #fff none repeat scroll 0 0;
     box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
@@ -617,7 +628,7 @@ height: 100%;
     color: #3e3e3e;
 }
 
-.col-sm #a1 {
+#col-sm #a1 {
     width: 100%;
     background-color: #ff5f6d;
 }
@@ -711,9 +722,274 @@ height: 100%;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 575px) {}
+@media only screen and (max-width: 575px) {
+    .anh img {
+        display: none;
+    }
+    .navbar .container-fluid {
+        width: 80%;
+    }
+    .moto-all h1 {
+        font-size: 35px;
+    }
+    .moto-all p {
+        font-size: 15px;
+    }
+    .moto-all {
+        top: 10%;
+        right: 0%;
+        width: 80%;
+    }
+    .moto-all p {
+        padding-right: 0%;
+    }
+    .easy .container {
+        width: 100%;
+    }
+    .easy .container .col-4 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .about .container .row .col-6 {
+        width: 100%;
+    }
+    .best .container .row .col-4 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .best .container .row .col-4 p {
+        padding: 0 0;
+    }
+    .best .best1 {
+        width: 90%;
+    }
+    .about {
+        width: 100%;
+    }
+    #best {
+        width: 100%;
+    }
+    .best .container .row .col p {
+        padding: 0 0;
+    }
+    #row1 h2 {
+        font-size: 30px;
+    }
+    .how #con1 {
+        width: 95%;
+    }
+    #col-12-4 {
+        width: 100%;
+    }
+    #con4 {
+        width: 100%;
+    }
+    #col-12-4 .col a {
+        padding: 15px 15px;
+    }
+    #col-12-4 .col-5 a {
+        padding: 15px 30px;
+    }
+    #col-12-1 {
+        width: 100%;
+    }
+    .how .col-6 {
+        width: 100%;
+    }
+    .how .col-6 img {
+        width: 100%;
+    }
+    #con3 {
+        width: 100%;
+    }
+    #row3 .col-3 {
+        width: 100%;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+    .submit #con5 {
+        width: 100%;
+    }
+    #col-12-3 {
+        width: 70%;
+    }
+    #col-12-3 p {
+        font-size: 13px;
+    }
+    #col-12-3 h2 {
+        font-size: 37px
+    }
+    .submit #con5 {
+        width: 100%;
+    }
+    #con6 {
+        width: 100%;
+        padding: 80px 0 0 0;
+    }
+    #col-12-7 {
+        width: 100%;
+    }
+    #col-sm {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #mb-3 {
+        padding: 100px 10px;
+    }
+    .about .btn {
+        margin-bottom: 50px;
+    }
+    #row7 .col-7 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #row7 .col-5 {
+        width: 80%;
+        margin: 0 auto;
+        height: 300px;
+    }
+    #con6 .col-4 {
+        width: 51%;
+        margin: 0 auto;
+    }
+    #row5 .col {
+        margin-bottom: 50px;
+    }
+    #row5 .col-5 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #col-12-5 p {
+        padding: 0 2px;
+        margin-bottom: 50px;
+    }
+}
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .anh img {
+        width: 95%;
+    }
+    .moto-all h1 {
+        font-size: 25px;
+    }
+    .moto-all p {
+        font-size: 14px;
+    }
+    .moto-all {
+        top: 30%;
+    }
+    .moto-all p {
+        padding-right: 0%;
+    }
+    .easy .container {
+        width: 100%;
+    }
+    .easy .container .col-4 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .about .container .row .col-6 {
+        width: 100%;
+    }
+    .best .container .row .col-4 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .best .container .row .col-4 p {
+        padding: 0 0;
+    }
+    .best .best1 {
+        width: 70%;
+    }
+    .about {
+        width: 100%;
+    }
+    #best {
+        width: 100%;
+    }
+    .best .container .row .col p {
+        padding: 0 0;
+    }
+    .how #con1 {
+        width: 100%;
+    }
+    #col-12-4 {
+        width: 100%;
+    }
+    #con4 {
+        width: 100%;
+    }
+    #col-12-4 .col a {
+        padding: 15px 15px;
+    }
+    #col-12-4 .col-5 a {
+        padding: 15px 30px;
+    }
+    #col-12-1 {
+        width: 70%;
+    }
+    #col1 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .how .col-6 {
+        width: 100%;
+    }
+    #con3 {
+        width: 100%;
+    }
+    #row3 .col-3 {
+        width: 100%;
+    }
+    .carousel-item img {
+        height: 500px;
+    }
+    .submit #con5 {
+        width: 100%;
+    }
+    #col-12-3 {
+        width: 70%;
+    }
+    #col-12-3 p {
+        font-size: 13px;
+    }
+    #col-12-3 h2 {
+        font-size: 37px
+    }
+    .submit #con5 {
+        width: 100%;
+    }
+    #con6 {
+        width: 100%;
+        padding: 80px 0 0 0;
+    }
+    #col-12-7 {
+        width: 80%;
+    }
+    #col-sm {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about .btn {
+        margin-bottom: 50px;
+    }
+    #row7 .col-7 {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #row7 .col-5 {
+        width: 80%;
+        margin: 0 auto;
+        height: 500px;
+    }
+    #con6 .col-4 {
+        width: 51%;
+        margin: 0 auto;
+    }
+}
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .anh img {
@@ -756,8 +1032,7 @@ height: 100%;
         width: 100%;
     }
     #col-12-4 {
-        width: 85%;
-        margin-right: 10px;
+        width: 100%;
     }
     #con4 {
         width: 100%;
@@ -781,6 +1056,9 @@ height: 100%;
     .submit #con5 {
         width: 100%;
     }
+    #col-12-3 {
+        width: 70%;
+    }
     #col-12-3 p {
         font-size: 13px;
     }
@@ -796,6 +1074,12 @@ height: 100%;
     }
     #col-12-7 {
         width: 60%;
+    }
+    #col-sm {
+        width: 50%;
+    }
+    .about .btn {
+        margin-bottom: 50px;
     }
 }
 
@@ -824,7 +1108,6 @@ height: 100%;
     }
     #col-12-4 {
         width: 85%;
-        margin-right: 10px;
     }
     #con4 {
         width: 100%;
@@ -877,7 +1160,6 @@ height: 100%;
     }
     #col-12-4 {
         width: 80%;
-        margin-right: 30px;
     }
     #con4 {
         width: 100%;
