@@ -6,7 +6,7 @@
 .menu {
     margin: 0 auto;
     position: fixed;
-    z-index: 2;
+    z-index: 100;
     width: 100%;
 }
 
@@ -26,27 +26,19 @@
     flex-grow: 0;
 }
 
-#navbarSupportedContent .navbar-nav .nav-item .nav-link {
+#nav a {
     padding-right: 20px;
     color: white;
-    transition: 0.3s background-color;
+    font-weight: 700;
 }
 
-#nav .nav-item {
-    transition: 0.3s background-color;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-#nav .nav-item :hover a {
-    color: #999999;
+#nav :hover a {
+    color: #ced4da;
 }
 
 #nav button {
     color: #fff;
     border-color: #fff;
-    transition: 0.3s background-color;
     padding: 5px 40px;
 }
 
@@ -100,7 +92,7 @@
     padding-right: 35%;
 }
 
-.moto-all .d-flex button {
+.moto-all .d-flex .btn {
     background: #ff5f6d;
     border-radius: 4px;
     color: #fff;
@@ -109,19 +101,12 @@
     padding: 10px 50px;
     text-decoration: none;
     border-color: #ff5f6d;
-    transition: 0.3s background-color boder-color;
 }
 
-.moto-all .d-flex :hover button {
+.d-flex :hover button {
     background-color: #dc3545;
     border-color: #dc3545;
 }
-
-
-/* .img {
-z-index: 1;
-height: 100%;
-} */
 
 .easy {
     margin: 0 auto;
@@ -137,7 +122,7 @@ height: 100%;
 
 .easy .container .col-4 {
     float: left;
-    padding: 110px 25px 105px;
+    padding: 105px 25px;
     vertical-align: middle;
     transform: perspective(1px) translateZ(0);
     transition-duration: 0.3s;
@@ -180,6 +165,10 @@ height: 100%;
     width: 60%;
 }
 
+.about .container .row {
+    padding-top: 130px;
+}
+
 .about .container .row .col-6 h2 {
     font-size: 40px;
     font-weight: 500;
@@ -207,15 +196,20 @@ height: 100%;
     color: #fff;
 }
 
+.modal-body {
+    width: 500px;
+    height: 350px;
+}
+
 #a {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
-    padding: 15px 40px;
+    padding: 30px 40px;
     text-decoration: none;
     margin-top: 25px;
     transition: 0.1s background-color;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 #a :hover {
@@ -322,6 +316,7 @@ height: 100%;
 
 .how #con1 {
     width: 60%;
+    padding: 130px 0;
 }
 
 #con1 img {
@@ -342,7 +337,7 @@ height: 100%;
 
 #con2 {
     margin-top: 55px;
-    box-shadow: 2px 2px 2px 2px #dee2e6;
+    box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
     padding: 10px 0;
 }
 
@@ -469,6 +464,7 @@ height: 100%;
     font-weight: 500;
     transition: 0.3s background-color;
     padding: 15px 35px;
+    box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
 }
 
 #col-12-4 .col-5 a {
@@ -543,7 +539,7 @@ height: 100%;
 }
 
 #col-sm .basic {
-    box-shadow: 2px 2px 2px 2px #dee2e6;
+    box-shadow: 0 0 30px 0px rgb(0 0 0 / 10%);
     border-radius: 10px;
     padding-top: 65px;
 }
@@ -605,10 +601,13 @@ height: 100%;
 .basic:hover #a2 {
     width: 100%;
     background-color: #ff5f6d;
+}
+
+#a2:hover {
     color: #ced4da;
 }
 
-.basic:hover #a1 {
+#a1:hover {
     color: #ced4da;
 }
 
@@ -626,6 +625,11 @@ height: 100%;
     padding: 20px 40px;
     transition: all 0.4s ease 0s;
     color: #3e3e3e;
+}
+
+#row7 {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 #col-sm #a1 {
@@ -676,10 +680,14 @@ height: 100%;
     padding-bottom: 15px;
     text-align: center;
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 .end .col-4 i {
     font-size: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 #col-12-5 p {
@@ -722,7 +730,26 @@ height: 100%;
     text-decoration: none;
 }
 
-@media only screen and (max-width: 575px) {
+#row8 {
+    margin: 0;
+}
+
+#row9 {
+    margin: 0;
+}
+
+#row1 {
+    margin: 0;
+}
+
+#row7 {
+    padding: 0;
+}
+
+@media only screen and (max-width: 320px) {
+    .anh {
+        height: 60vh;
+    }
     .anh img {
         display: none;
     }
@@ -736,7 +763,7 @@ height: 100%;
         font-size: 15px;
     }
     .moto-all {
-        top: 10%;
+        top: 20%;
         right: 0%;
         width: 80%;
     }
@@ -748,7 +775,192 @@ height: 100%;
     }
     .easy .container .col-4 {
         width: 90%;
+        padding: 40px 25px;
         margin: 0 auto;
+    }
+    .about .container .row {
+        padding-top: 50px;
+    }
+    .about .container .row .col-6 {
+        width: 100%;
+    }
+    .about .container .row .col-6 h2 {
+        font-size: 35px;
+    }
+    .best .best1 h2 {
+        font-size: 35px;
+    }
+    .best .container .row .col-4 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .best .container .row .col-4 p {
+        padding: 0 0;
+    }
+    .best .best1 {
+        width: 90%;
+        padding-bottom: 0px;
+    }
+    .about {
+        width: 100%;
+    }
+    #best {
+        width: 100%;
+        padding: 50px 0;
+    }
+    .best .container .row .col p {
+        padding: 0 0;
+    }
+    #row1 h2 {
+        font-size: 30px;
+    }
+    .how #con1 {
+        width: 95%;
+        padding: 50px 0;
+    }
+    #col-12-4 {
+        width: 100%;
+    }
+    #con4 {
+        width: 100%;
+    }
+    #col-12-1 h2 {
+        font-size: 35px;
+    }
+    #col-12-4 .col a {
+        padding: 15px 15px;
+    }
+    #col-12-4 .col-5 a {
+        padding: 15px 30px;
+    }
+    #col-12-1 {
+        width: 100%;
+    }
+    .how .col-6 {
+        width: 100%;
+    }
+    .how .col-6 img {
+        width: 100%;
+    }
+    #con3 {
+        width: 100%;
+    }
+    .parameter {
+        padding: 50px 0;
+    }
+    #row3 .col-3 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+    .submit #con5 {
+        width: 100%;
+        padding-top: 50px;
+    }
+    #col-12-3 {
+        width: 100%;
+    }
+    #col-12-3 p {
+        font-size: 13px;
+    }
+    #col-12-3 h2 {
+        font-size: 35px
+    }
+    #row4 {
+        padding: 50px 0;
+    }
+    #row5 {
+        padding: 50px 0;
+    }
+    #row6 {
+        padding: 50px 0;
+    }
+    #con6 {
+        width: 100%;
+        padding: 80px 0 0 0;
+    }
+    #col-12-7 {
+        width: 100%;
+    }
+    #col-12-7 h2 {
+        font-size: 35px;
+    }
+    #col-sm {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    #mb-3 {
+        padding: 100px 10px;
+    }
+    .about .btn {
+        margin-bottom: 50px;
+    }
+    #row7 .col-7 {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #row7 .col-5 {
+        width: 100%;
+        margin: 0 auto;
+        height: 300px;
+    }
+    #con6 .col-4 {
+        width: 60%;
+        margin: 0 auto;
+    }
+    #row5 .col {
+        margin-bottom: 50px;
+    }
+    #row5 .col-5 {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #col-12-5 p {
+        padding: 0 2px;
+        margin-bottom: 50px;
+    }
+    #row3 h2 {
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 566px) {
+    .anh {
+        height: 60vh;
+    }
+    .anh img {
+        display: none;
+    }
+    .navbar .container-fluid {
+        width: 80%;
+    }
+    .moto-all h1 {
+        font-size: 35px;
+    }
+    .moto-all p {
+        font-size: 15px;
+    }
+    .moto-all {
+        top: 20%;
+        right: 0%;
+        width: 80%;
+    }
+    .moto-all p {
+        padding-right: 0%;
+    }
+    .easy .container {
+        width: 100%;
+    }
+    .easy .container .col-4 {
+        width: 90%;
+        padding: 80px 25px;
+        margin: 0 auto;
+    }
+    .about .container .row {
+        padding-top: 50px;
     }
     .about .container .row .col-6 {
         width: 100%;
@@ -768,6 +980,7 @@ height: 100%;
     }
     #best {
         width: 100%;
+        padding: 50px 0;
     }
     .best .container .row .col p {
         padding: 0 0;
@@ -804,15 +1017,17 @@ height: 100%;
     }
     #row3 .col-3 {
         width: 100%;
+        margin-bottom: 30px;
     }
     .carousel-item img {
         height: 300px;
     }
     .submit #con5 {
         width: 100%;
+        padding-top: 50px;
     }
     #col-12-3 {
-        width: 70%;
+        width: 100%;
     }
     #col-12-3 p {
         font-size: 13px;
@@ -820,11 +1035,14 @@ height: 100%;
     #col-12-3 h2 {
         font-size: 37px
     }
-    .submit #con5 {
-        width: 100%;
+    #row5 {
+        padding: 50px 0;
+    }
+    #row6 {
+        padding: 50px 0;
     }
     #con6 {
-        width: 100%;
+        width: 95%;
         padding: 80px 0 0 0;
     }
     #col-12-7 {
@@ -851,7 +1069,7 @@ height: 100%;
         height: 300px;
     }
     #con6 .col-4 {
-        width: 51%;
+        width: 60%;
         margin: 0 auto;
     }
     #row5 .col {
@@ -864,6 +1082,9 @@ height: 100%;
     #col-12-5 p {
         padding: 0 2px;
         margin-bottom: 50px;
+    }
+    #row3 h2 {
+        margin-bottom: 0;
     }
 }
 
@@ -1077,6 +1298,10 @@ height: 100%;
     }
     #col-sm {
         width: 50%;
+        margin-bottom: 40px;
+    }
+    .basic span {
+        font-size: 37px;
     }
     .about .btn {
         margin-bottom: 50px;
