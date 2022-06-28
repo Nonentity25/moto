@@ -198,7 +198,7 @@
 
 .modal-body {
     width: 500px;
-    height: 350px;
+    height: 450px;
 }
 
 #a {
@@ -746,6 +746,14 @@
     padding: 0;
 }
 
+#row7 .col-7 {
+    padding: 0;
+}
+
+#row7 .col-5 {
+    padding: 0;
+}
+
 @media only screen and (max-width: 320px) {
     .anh {
         height: 60vh;
@@ -803,6 +811,11 @@
     }
     .about {
         width: 100%;
+    }
+    .modal-body {
+        width: 250px;
+        margin: 0 auto;
+        height: 250px;
     }
     #best {
         width: 100%;
@@ -889,6 +902,7 @@
     }
     #col-sm {
         width: 100%;
+        padding: 0;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -908,7 +922,7 @@
         height: 300px;
     }
     #con6 .col-4 {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
     }
     #row5 .col {
@@ -924,10 +938,11 @@
     }
     #row3 h2 {
         margin-bottom: 0;
+        font-size: 30px;
     }
 }
 
-@media only screen and (min-width: 321px) and (max-width: 566px) {
+@media only screen and (min-width: 321px) and (max-width: 575px) {
     .anh {
         height: 60vh;
     }
@@ -977,6 +992,11 @@
     }
     .about {
         width: 100%;
+    }
+    .modal-body {
+        width: 300px;
+        margin: 0 auto;
+        height: 250px;
     }
     #best {
         width: 100%;
