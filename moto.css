@@ -938,6 +938,9 @@
         width: 100%;
         margin-bottom: 50px;
     }
+    #col-12-5 .icon i {
+        margin-right: 15px;
+    }
     #col-12-5 p {
         padding: 0 2px;
         margin-bottom: 50px;
@@ -945,6 +948,12 @@
     #row3 h2 {
         margin-bottom: 0;
         font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 401px) {
+    #col-12-5 .icon i {
+        margin-right: 28px;
     }
 }
 
@@ -1118,6 +1127,9 @@
     .anh img {
         width: 95%;
     }
+    .anh {
+        height: 70vh;
+    }
     .moto-all h1 {
         font-size: 25px;
     }
@@ -1242,6 +1254,9 @@
     .anh img {
         width: 95%;
     }
+    .anh {
+        height: 70vh;
+    }
     .moto-all h1 {
         font-size: 40px;
     }
@@ -1256,6 +1271,7 @@
     }
     .easy .container .col-4 {
         width: 50%;
+        margin: 0 auto;
     }
     .best .container .row .col-4 {
         width: 50%;
@@ -1324,7 +1340,7 @@
     }
     #col-sm {
         width: 50%;
-        margin-bottom: 40px;
+        margin: 20px auto;
     }
     .basic span {
         font-size: 37px;
@@ -1335,6 +1351,10 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .anh img {
+        height: 80%;
+        width: 80%;
+    }
     .moto-all p {
         padding-right: 0%;
         font-size: 16px;
@@ -1391,6 +1411,10 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .anh img {
+        height: 100%;
+        width: 80%;
+    }
     .moto-all {
         right: 7%;
     }
