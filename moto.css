@@ -103,7 +103,7 @@
     border-color: #ff5f6d;
 }
 
-.d-flex :hover button {
+#btn :hover button {
     background-color: #dc3545;
     border-color: #dc3545;
 }
@@ -665,6 +665,12 @@
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    transition: 0.3s background-color boder-color;
+}
+
+#but1 :hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
 }
 
 .end {
