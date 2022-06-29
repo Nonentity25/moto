@@ -949,6 +949,9 @@
         margin-bottom: 0;
         font-size: 30px;
     }
+    #mb-3 {
+        padding: 30px 50px;
+    }
 }
 
 @media only screen and (min-width: 325px) and (max-width: 401px) {
@@ -1121,6 +1124,9 @@
     #row3 h2 {
         margin-bottom: 0;
     }
+    #mb-3 {
+        padding: 30px 50px;
+    }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1212,6 +1218,7 @@
     }
     .submit #con5 {
         width: 100%;
+        padding-top: 50px;
     }
     #col-12-3 {
         width: 70%;
@@ -1261,6 +1268,9 @@
     }
     #row4 {
         padding: 50px 0;
+    }
+    #mb-3 {
+        padding: 30px 50px;
     }
 }
 
